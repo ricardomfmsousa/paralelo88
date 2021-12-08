@@ -1,6 +1,6 @@
 {
-  "name": "next-netlify-starter",
-  "version": "0.5.0",
+  "name": "paralelo88",
+  "version": "1.0.0-SNAPSHOT",
   "private": true,
   "scripts": {
     "dev": "next dev",
