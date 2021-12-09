@@ -1,8 +1,8 @@
-import Footer from "@components/Footer";
-import Header from "@components/Header";
+import Footer from "components/Footer";
+import Header from "components/Header";
 import Head from "next/head";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <div className="container">
       <Head>
@@ -17,5 +17,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  );
+  )
 }
