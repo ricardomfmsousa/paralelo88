@@ -7,7 +7,7 @@
     "build": "next build",
     "export": "next export",
     "format": "prettier --write .",
-    "lint": "eslint ./components/** ./pages/** -c .eslintrc --ext ts,tsx --color"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "dependencies": {
     "next": "^12.0.1",
