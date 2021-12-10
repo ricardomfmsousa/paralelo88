@@ -55,7 +55,7 @@ export default function Home(): JSX.Element {
         >
           <Col
             xs={{ order: 1 }}
-            md={{ size: 7, offset: 1 }}
+            md={{ offset: 1 }}
             className="py-5 mb-5 py-md-0 mb-md-0"
           >
             <Image
@@ -73,7 +73,7 @@ export default function Home(): JSX.Element {
         >
           <Col
             xs={{ order: 1 }}
-            md={{ size: 7, offset: 1 }}
+            md={{ offset: 1 }}
             className="py-5 mb-5 py-md-0 mb-md-0"
           >
             <Image

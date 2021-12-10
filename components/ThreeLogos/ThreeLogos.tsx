@@ -6,6 +6,7 @@ export default function ThreeLogos(props): JSX.Element {
     <div className="d-flex flex-column" {...props}>
       {rotations.map((r) => (
         <Image
+          key={r}
           src="images/logo.svg"
           alt="Paralelo 88 Logo"
           fluid
