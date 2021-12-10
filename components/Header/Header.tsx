@@ -8,8 +8,6 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import styles from "./Header.module.scss";
 
 export default function Header(): JSX.Element {
-  const [expanded, setExpanded] = useState(false)
-
   return (
     <Navbar
       fixed="top"

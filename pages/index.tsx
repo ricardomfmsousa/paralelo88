@@ -6,6 +6,8 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 
+import ThreeLogos from "../components/ThreeLogos/ThreeLogos";
+
 export default function Home(): JSX.Element {
   return (
     <>
@@ -35,10 +37,18 @@ export default function Home(): JSX.Element {
       </Head>
 
       <Container as="header" id="home" fluid className="p-0">
-        <Header title="Paralelo 88" />
+        <Header />
       </Container>
 
       <Container as="main" fluid>
+        <ThreeLogos
+          style={{
+            width: '150px',
+            position: 'fixed',
+            right: '1em',
+            bottom: '1em',
+          }}
+        />
         <Row
           as="section"
           className="pt-2 pt-md-5 w-100 px-4 px-xl-0 position-relative"
