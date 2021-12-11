@@ -1,49 +1,37 @@
+import classNames from "classnames";
 import { useState } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Offcanvas from "react-bootstrap/Offcanvas";
 
+import Menu from "../Menu/Menu";
 import styles from "./Header.module.scss";
 
 export default function Header(): JSX.Element {
+  const [isMenuOpen, setMenuOpen] = useState(false)
   return (
     <Navbar
       fixed="top"
       expand={false}
       collapseOnSelect
-      className={styles.navBar}
+      className={styles.navbar}
     >
       <Container fluid>
-        <Navbar.Brand href="#">
+        {isMenuOpen && <Menu setMenuOpen={setMenuOpen} />}
+        <Navbar.Brand href="#" className={styles.brand}>
           <Image
-            src="images/p88_logo.svg"
+            src="images/p88.svg"
             className={styles.logo}
             alt="Paralelo 88 Logo"
             fluid
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="offcanvasNavbar" />
-        <Navbar.Offcanvas
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-          placement="end"
-          restoreFocus={false}
-        >
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel">
-              Paralelo 88
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link href="#home">Início</Nav.Link>
-              <Nav.Link href="#services">Serviços</Nav.Link>
-              <Nav.Link href="#contact">Contactos</Nav.Link>
-            </Nav>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
+        <button
+          type="button"
+          className={classNames(styles.menutrigger, 'bi bi-list-nested')}
+          onClick={() => setMenuOpen(!isMenuOpen)}
+        ></button>
       </Container>
     </Navbar>
   )

@@ -1,8 +1,19 @@
-.nav-bar {
+.navbar {
   background: white !important;
+  padding: 3vw;
 }
 
-.logo {
-  width: 60vw;
-  max-width: 400px;
+.brand {
+  z-index: 1001;
+  .logo {
+    width: 60vw;
+    max-width: 400px;
+  }
+}
+
+.menutrigger {
+  z-index: 1001;
+  border: none;
+  background: transparent;
+  font-size: min(max(1em, 10vw), 3em);
 }
