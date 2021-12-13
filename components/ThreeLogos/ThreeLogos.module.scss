@@ -1,0 +1,14 @@
+.logos {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.watermark {
+  position: fixed;
+  right: 1em;
+  top: calc(50% + 4vw);
+  transform: translateY(-50%);
+  z-index: -1;
+  opacity: 0.1;
+}

@@ -1,6 +1,7 @@
 .navbar {
   background: white !important;
-  padding: 3vw;
+  padding: var(--header-padding);
+  opacity: 0.95;
 }
 
 .brand {
@@ -15,5 +16,5 @@
   z-index: 1001;
   border: none;
   background: transparent;
-  font-size: min(max(1em, 10vw), 3em);
+  font-size: var(--header-font-size);
 }

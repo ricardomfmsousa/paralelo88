@@ -1,10 +1,7 @@
 import Footer from "components/Footer/Footer";
 import Header from "components/Header/Header";
 import Head from "next/head";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
 
 import ThreeLogos from "../components/ThreeLogos/ThreeLogos";
 
@@ -36,59 +33,55 @@ export default function Home(): JSX.Element {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <Container as="header" id="home" fluid className="p-0">
+      <header id="home" className="container-fluid, p-0">
         <Header />
-      </Container>
+      </header>
 
-      <Container as="main" fluid>
-        <ThreeLogos
-          style={{
-            width: '150px',
-            position: 'fixed',
-            right: '1em',
-            bottom: '1em',
-          }}
-        />
-        <Row
-          as="section"
-          className="pt-2 pt-md-5 w-100 px-4 px-xl-0 position-relative"
-        >
-          <Col
-            xs={{ order: 1 }}
-            md={{ offset: 1 }}
-            className="py-5 mb-5 py-md-0 mb-md-0"
-          >
+      <main className="container">
+        <section className="row gx-5 gy-3">
+          <div className="col-md-6">
             <Image
               src="images/plant_on_chair.jpg"
-              width="250"
               alt="Paralelo 88 Logo"
               fluid
             />
-          </Col>
-        </Row>
-        <Row
-          as="section"
-          id="services"
-          className="pt-2 pt-md-5 w-100 px-4 px-xl-0 position-relative"
-        >
-          <Col
-            xs={{ order: 1 }}
-            md={{ offset: 1 }}
-            className="py-5 mb-5 py-md-0 mb-md-0"
-          >
+          </div>
+          <div className="col-md-6">
+            <p>
+              Mais do que uma loja, um conceito. Um espaço que reúne o orgânico
+              e o design. Um projecto de proximidade com o mundo natural e
+              autêntico, aliado às premissas de um estilo de vida mais
+              sustentável e minimalista. Um espaço que promove simbioses
+              harmoniosas para mostrar projectos que se distinguem nas áreas do
+              design, sustentabilidade e outros tantos que sejam possíveis.{' '}
+            </p>
+          </div>
+        </section>
+        <section id="services" className="row gx-5 gy-3">
+          <div className="col-md-6">
             <Image
               src="images/abstract_install.jpg"
-              width="250"
               alt="Paralelo 88 Logo"
               fluid
             />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+          <div className="col-md-6">
+            <p>
+              Plantas, muitas plantas; cerâmicas de autor; cosméticos naturais e
+              orgânicos e acessórios para um estilo de vida Desperdício Zero e
+              sem plástico. Para lá do Showroom, a Paralelo 88 promete uma
+              dinâmica vivida de mostras de outros criadores e de workshops nas
+              mais variadas áreas.
+            </p>
+          </div>
+        </section>
+      </main>
 
-      <Container as="footer" id="contact" fluid>
+      <footer id="contact" className="container-fluid">
         <Footer />
-      </Container>
+      </footer>
+
+      <ThreeLogos />
     </>
   )
 }
