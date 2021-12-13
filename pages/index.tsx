@@ -58,14 +58,14 @@ export default function Home(): JSX.Element {
           </div>
         </section>
         <section id="services" className="row gx-5 gy-3">
-          <div className="col-md-6">
+          <div className="col-md-6 order-md-2">
             <Image
               src="images/abstract_install.jpg"
               alt="Paralelo 88 Logo"
               fluid
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 order-md-1">
             <p>
               Plantas, muitas plantas; cerâmicas de autor; cosméticos naturais e
               orgânicos e acessórios para um estilo de vida Desperdício Zero e

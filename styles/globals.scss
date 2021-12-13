@@ -29,9 +29,9 @@ main {
 }
 
 section {
-  padding: 5rem 0;
+  padding: min(max(1em, 10vw), 4em) 0;
 }
 
 p {
-  font-size: min(max(1em, 3vw), 2em);
+  font-size: min(max(1em, 3vw), 1.5em);
 }
