@@ -3,11 +3,14 @@
   "version": "1.0.0-SNAPSHOT",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "start": "yarn code-check && next dev",
     "build": "next build",
     "export": "next export",
-    "format": "prettier --write .",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "format:fix": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:fix": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint:check": "eslint '*/**/*.{js,ts,tsx}'",
+    "code-check": "yarn lint:check && yarn format:check"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
