@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "react-bootstrap/Image";
+import React from 'react';
+import Image from 'react-bootstrap/Image';
 
-import styles from "./Menu.module.scss";
+import styles from './Menu.module.scss';
 
 export default function Menu({ setMenuOpen }): JSX.Element {
   return (
@@ -18,5 +18,5 @@ export default function Menu({ setMenuOpen }): JSX.Element {
         fluid
       />
     </aside>
-  )
+  );
 }

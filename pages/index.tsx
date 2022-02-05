@@ -1,9 +1,9 @@
-import Footer from "components/Footer/Footer";
-import Header from "components/Header/Header";
-import Head from "next/head";
-import Image from "react-bootstrap/Image";
+import Footer from 'components/Footer/Footer';
+import Header from 'components/Header/Header';
+import Head from 'next/head';
+import Image from 'react-bootstrap/Image';
 
-import ThreeLogos from "../components/ThreeLogos/ThreeLogos";
+import ThreeLogos from '../components/ThreeLogos/ThreeLogos';
 
 export default function Home(): JSX.Element {
   return (
@@ -83,5 +83,5 @@ export default function Home(): JSX.Element {
 
       <ThreeLogos />
     </>
-  )
+  );
 }

@@ -1,10 +1,10 @@
-import classNames from "classnames";
-import Image from "react-bootstrap/Image";
+import classNames from 'classnames';
+import Image from 'react-bootstrap/Image';
 
-import styles from "./ThreeLogos.module.scss";
+import styles from './ThreeLogos.module.scss';
 
 export default function ThreeLogos(props): JSX.Element {
-  const rotations = [90, 0, 180]
+  const rotations = [90, 0, 180];
   return (
     <div className={classNames(styles.watermark, styles.logos)} {...props}>
       {rotations.map((r) => (
@@ -17,5 +17,5 @@ export default function ThreeLogos(props): JSX.Element {
         />
       ))}
     </div>
-  )
+  );
 }

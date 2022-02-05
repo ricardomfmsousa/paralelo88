@@ -1,7 +1,7 @@
-import classNames from "classnames";
-import { SocialIcon } from "react-social-icons";
+import classNames from 'classnames';
+import { SocialIcon } from 'react-social-icons';
 
-import styles from "./Footer.module.scss";
+import styles from './Footer.module.scss';
 
 export default function Footer() {
   return (
@@ -25,5 +25,5 @@ export default function Footer() {
         </div>
       </div>
     </div>
-  )
+  );
 }

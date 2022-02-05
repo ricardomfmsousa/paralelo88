@@ -1,15 +1,15 @@
-import classNames from "classnames";
-import { useState } from "react";
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
-import Navbar from "react-bootstrap/Navbar";
+import classNames from 'classnames';
+import { useState } from 'react';
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Navbar from 'react-bootstrap/Navbar';
 
-import Menu from "../Menu/Menu";
-import styles from "./Header.module.scss";
+import Menu from '../Menu/Menu';
+import styles from './Header.module.scss';
 
 export default function Header(): JSX.Element {
-  const [isMenuOpen, setMenuOpen] = useState(false)
+  const [isMenuOpen, setMenuOpen] = useState(false);
   return (
     <Navbar
       fixed="top"
@@ -34,5 +34,5 @@ export default function Header(): JSX.Element {
         ></button>
       </Container>
     </Navbar>
-  )
+  );
 }
