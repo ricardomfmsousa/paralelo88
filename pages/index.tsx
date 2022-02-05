@@ -58,7 +58,7 @@ export default function Home(): JSX.Element {
             </p>
           </div>
         </section>
-        <section id="services" className="row gx-5 gy-3">
+        <section id="services" className="row gy-3">
           <div className="col-md-6 order-md-2">
             <Image
               src="images/abstract_install.jpg"
