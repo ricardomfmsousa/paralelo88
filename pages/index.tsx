@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Image from 'react-bootstrap/Image';
 
 import ThreeLogos from '../components/ThreeLogos/ThreeLogos';
+import styles from '../styles/pages/index.module.scss';
 
 export default function Home(): JSX.Element {
   return (
@@ -47,13 +48,13 @@ export default function Home(): JSX.Element {
             />
           </div>
           <div className="col-md-6">
-            <p>
+            <p className={styles['intro-text']}>
               Mais do que uma loja, um conceito. Um espaço que reúne o orgânico
               e o design. Um projecto de proximidade com o mundo natural e
               autêntico, aliado às premissas de um estilo de vida mais
               sustentável e minimalista. Um espaço que promove simbioses
               harmoniosas para mostrar projectos que se distinguem nas áreas do
-              design, sustentabilidade e outros tantos que sejam possíveis.{' '}
+              design, sustentabilidade e outros tantos que sejam possíveis.
             </p>
           </div>
         </section>
@@ -66,7 +67,7 @@ export default function Home(): JSX.Element {
             />
           </div>
           <div className="col-md-6 order-md-1">
-            <p>
+            <p className={styles['description-text']}>
               Plantas, muitas plantas; cerâmicas de autor; cosméticos naturais e
               orgânicos e acessórios para um estilo de vida Desperdício Zero e
               sem plástico. Para lá do Showroom, a Paralelo 88 promete uma
